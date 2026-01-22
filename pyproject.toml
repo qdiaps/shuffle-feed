@@ -4,4 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "aiogram>=3.24.0",
+    "aiosqlite>=0.22.1",
+    "apscheduler>=3.11.2",
+    "pyrogram>=2.0.106",
+    "python-dotenv>=1.2.1",
+    "tgcrypto>=1.2.5",
+]
