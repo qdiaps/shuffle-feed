@@ -1,14 +1,15 @@
 [project]
-name = "elitpapkebot"
-version = "0.1.0"
-description = "Add your description here"
+name = "shuffle-feed"
+version = "1.0.0"
+description = "A bot aggregator that collects the most interesting videos and photos from multiple channels and mixes them together."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "aiogram>=3.24.0",
     "aiosqlite>=0.22.1",
     "apscheduler>=3.11.2",
-    "pyrogram>=2.0.106",
     "python-dotenv>=1.2.1",
+    "qrcode>=8.2",
+    "telethon>=1.42.0",
     "tgcrypto>=1.2.5",
 ]
