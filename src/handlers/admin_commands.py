@@ -355,7 +355,7 @@ async def cmd_stats(message: Message, bot: Bot):
                 continue
 
             text += f"• {full_name} {username} (ID {id})\n"
-            asyncio.sleep(0.5)
+            await asyncio.sleep(0.5)
     else:
         text += "• База администраторов пуста"
 
