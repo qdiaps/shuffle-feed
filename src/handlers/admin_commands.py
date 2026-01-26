@@ -350,11 +350,11 @@ async def cmd_stats(message: Message, bot: Bot):
         for id in admins_list:
             full_name, username = await get_user_info(bot, id)
             if not username:
-                text += f"• ID: {id} - возникла ошибка (см. в логах)"
+                text += f"• ID: {id} - возникла ошибка (см. в логах)\n"
                 logger.error(username, exc_info=True)
                 continue
 
-            text += f"• {full_name} {username} (ID {id})"
+            text += f"• {full_name} {username} (ID {id})\n"
             asyncio.sleep(0.5)
     else:
         text += "• База администраторов пуста"
