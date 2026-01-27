@@ -86,7 +86,7 @@ async def cmd_support(message: Message, command: CommandObject, bot: Bot):
     for admin_id in admins:
         try:
             await bot.send_message(admin_id, report_text)
-            await message.answer("Сообщение отправлено администраторам.")
         except Exception as e:
-            await message.answer("Не удалось отправить сообщение. Попробуйте позже.")
             logger.error(f"Не удалось отправить репорт админу {admin_id}: {e}")
+
+    await message.answer("Сообщение отправлено администраторам.")
