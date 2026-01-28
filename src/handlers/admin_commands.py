@@ -372,7 +372,7 @@ async def process_delete_request(callback: CallbackQuery, bot: Bot):
     report_text = (
         f"Жалоба на пост\n"
         f"━━━━━━━━━━━━━━━━━━\n"
-        f"От: {callback.from_user.full_name} @{callback.from_user.username} (ID: {callback.from_user.id})\n"
+        f"От: {callback.from_user.full_name} {'@' + callback.from_user.username if callback.from_user.username != None else ''} (ID: {callback.from_user.id})\n"
         f"Пост: <a href='{post_link}'>Перейти к посту</a>\n"
         f"━━━━━━━━━━━━━━━━━━\n"
         f"Удалить из базы?"
