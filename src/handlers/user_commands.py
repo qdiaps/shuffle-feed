@@ -73,7 +73,7 @@ async def cmd_support(message: Message, command: CommandObject, bot: Bot):
     report_text = (
         f"Сообщение в поддержку\n"
         f"━━━━━━━━━━━━━━━━━━\n"
-        f"От: {message.from_user.full_name} {'@' + message.from_user.username if message.from_user.username != else '[ Нет username ]'} (ID: {message.from_user.id})\n\n"
+        f"От: {message.from_user.full_name} {'@' + message.from_user.username if message.from_user.username != None else '[ Нет username ]'} (ID: {message.from_user.id})\n\n"
         f"━━━━━━━━━━━━━━━━━━\n"
         f"{command.args}"
     )
